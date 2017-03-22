@@ -2,7 +2,8 @@
     "compilerOptions": {
         "lib":[
             "ES2015",
-            "DOM"
+            "DOM",
+            "ES2017"
         ],
         "module": "commonjs",
         "target": "es5",
