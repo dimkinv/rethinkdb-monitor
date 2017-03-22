@@ -10,10 +10,7 @@ export function init() {
             password: '123456',
             db: 'rethinkdb'
         });
-        // const statsCursor = await rethink.table('stats').changes().run(conn);
-        // statsCursor.each((err, item)=>{
-        // });
-
+        
         tables = await rethink.db('seta2').tableList().run(conn);
         resolve(tables);
     });
